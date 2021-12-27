@@ -300,8 +300,8 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 // Dibuat Oleh    : Made Hollanda Putri - 2105551014                     //
 //                                                                       //
 // Versi : 1                                                             //
-// Revisi 1       : Mentranslate ceksaldo1 ke dalam bahasa inggris dan   //
-//                  mengisi ceksaldo2 dengan bahasa yang sudah           //
+// Revisi 1       : Mentranslate tariktunai1 ke dalam bahasa inggris dan //
+//                  mengisi tariktunai2 dengan bahasa yang sudah         //
 //                  ditranslate ke dalam bahasa inggris                  //
 // Direvisi Oleh  : Made Hollanda Putri - 2105551014                     //
 //=======================================================================//
