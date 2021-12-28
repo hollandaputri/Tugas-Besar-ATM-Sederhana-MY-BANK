@@ -38,20 +38,30 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 //=======================================================================//
 
     login : {
-
-        printf ("\n**************************************************************************\n");
-        printf ("Masukan USERNAME Anda: ");
+        system ("cls");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\t\t\t\t*************** Program ATM MY BANK ***************\n");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\t\t\t\t*                        Oleh                      *\n");
+        printf("\t\t\t\t*               1. Made Hollanda Putri             *\n");
+        printf("\t\t\t\t*               2. Jesica Syalomitha               *\n");
+        printf("\t\t\t\t ==================================================\n\n\n");
+        printf("\t\t\t\t\t\t\n");
+        printf("\t\t\t\t==================================================\n");
+        printf("\t\t\t\t *             USERNAME & KODE USER              *\n");
+        printf("\t\t\t\t==================================================\n\n");
+        printf ("\t\t\t\t Masukan USERNAME Anda: ");
         scanf ("%s", username);
-
-        printf ("Masukan KODE USER Anda: ");
+        printf ("\t\t\t\t Masukan KODE USER Anda: ");
         scanf ("%s", kode);
 
 
         if((strcmp(username, "Hollanda14") == 0) && (strcmp(kode, "Jesica43") == 0)) {
-            printf ("ANDA BERHASIL LOGIN\n");
-            printf ("\n**************************************************************************\n");
-            printf (" \nTekan 1 UNTUK LANJUT");
-            printf (" = ");
+            printf ("\n\t\t\t\t ANDA BERHASIL LOGIN\n");
+            printf("\t\t\t\t========================\n");
+            printf ("\n\t\t\t\t Tekan 1 UNTUK LANJUT\n");
+            printf("\t\t\t\t========================\n");
+            printf ("\t\t\t\t = ");
             scanf  ("%d" , &pilihan );
                 if (pilihan != 1) goto login;
 	}
@@ -101,30 +111,36 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
     pemilik_rekening_2.umur = 18;
 
     // mencetak isi struct
-    printf("\n\nMASUKAN PIN ATM ANDA = ");
+    printf("\n\t\t\t\t MASUKAN PIN ATM ANDA\n");
+    printf("\t\t\t\t========================\n");
+    printf ("\t\t\t\t = ");
     scanf("%d", &pin);
     if (pin == 111000) {
-        printf("\n## Data Rekening 1 ##\n");
-        printf("Nama: %s\n", pemilik_rekening_1.nama);
-        printf("Nomor Rekening: %s\n", pemilik_rekening_1.norek);
-        printf("Alamat: %s\n", pemilik_rekening_1.alamat);
-        printf("Umur: %d\n", pemilik_rekening_1.umur); }
+        printf("\n\n");
+        printf("\t\t\t\t================================================\n");
+        printf("\t\t\t\t Nama: %s\n", pemilik_rekening_1.nama);
+        printf("\t\t\t\t Nomor Rekening: %s\n", pemilik_rekening_1.norek);
+        printf("\t\t\t\t Alamat: %s\n", pemilik_rekening_1.alamat);
+        printf("\t\t\t\t Umur: %d\n", pemilik_rekening_1.umur); }
 
 
     else if (pin == 111001) {
-        printf("\n## Data Rekening 2 ##\n");
-        printf("Nama: %s\n",  pemilik_rekening_2.nama);
-        printf("Nomor Rekening: %s\n",  pemilik_rekening_2.norek);
-        printf("Alamat: %s\n",  pemilik_rekening_2.alamat);
-        printf("Umur: %d\n",  pemilik_rekening_2.umur);}
+        printf("\n\n");
+        printf("\t\t\t\t================================================\n");
+        printf("\t\t\t\t Nama: %s\n",  pemilik_rekening_2.nama);
+        printf("\t\t\t\t Nomor Rekening: %s\n",  pemilik_rekening_2.norek);
+        printf("\t\t\t\t Alamat: %s\n",  pemilik_rekening_2.alamat);
+        printf("\t\t\t\t Umur: %d\n",  pemilik_rekening_2.umur);}
 
 
     else {
-    printf ("\nPIN SALAH");
+        printf ("\n\t\t\t\t PIN SALAH");
+        printf("\t\t\t\t========================\n");
         }
 
-         printf (" \nTekan 1 UNTUK TRANSAKSI");
-         printf (" = ");
+         printf ("\n\t\t\t\t Tekan 1 UNTUK TRANSAKSI\n");
+         printf("\t\t\t\t========================\n");
+         printf ("\t\t\t\t = ");
          scanf  ("%d" , &pilihan );
                 if (pilihan != 1) goto login;
 
@@ -150,15 +166,16 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 
         menu_awal : {
     system ("cls");
-        printf ("**************************************************************************\n");
-        printf ("**************************************************************************\n");
-        printf ("\n          SELAMAT DATANG DI PROGRAM ATM SEDERHANA MY BANK	\n\n");
-        printf ("**************************************************************************\n");
-        printf ("**************************************************************************\n");
-        printf ("\n\nSILAHKAN PILIH BAHASA ANDA \n");
-        printf ("PLEASE SELECT YOUR LANGUAGE \n");
-        printf (" 1. Indonesia\n 2. English\n");
-        printf (" = ");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\t\t\t\t   SELAMAT DATANG DI PROGRAM ATM SEDERHANA MY BANK  \n");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\t\t\t\t              SILAHKAN PILIH BAHASA ANDA          \n");
+        printf("\t\t\t\t                     1. INDONESIA                \n");
+        printf("\t\t\t\t                     2. ENGLISH                  \n");
+        printf("\t\t\t\t ==================================================\n\n\n");
+        printf("\t\t\t\t\t\t\n");
+        printf ("\t\t\t\t Masukan Pilihan Anda:\n");
+        printf ("\t\t\t\t = ");
         scanf  ("%d" , &bahasa );
             if (bahasa == 1) goto indonesia;
 
@@ -185,21 +202,23 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 
 	indonesia : {
 	system ("cls");
-        printf ("============================================================================\n");
-        printf ("============================================================================\n");
-        printf ("\n 		SELAMAT DATANG DI MENU UTAMA ATM MY BANK \n");
-        printf ("\n============================================================================\n");
-        printf ("============================================================================\n");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\t\t\t\t                    SELAMAT DATANG DI              \n\n");
+        printf("\t\t\t\t                     # ATM MY BANK #               \n");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\t\t\t\t ==================================================\n");
 	goto menu1;
 	}
 
 	inggris : {
 	system ("cls");
-        printf ("============================================================================\n");
-        printf ("============================================================================\n");
-        printf ("\n 		WELCOME TO THE MAIN MENU OF MY BANK ATM\n");
-        printf ("\n============================================================================\n");
-        printf ("============================================================================\n");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\t\t\t\t                       WELCOME TO                \n\n");
+        printf("\t\t\t\t                     # MY BANK ATM #               \n");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\t\t\t\t ==================================================\n");
     goto menu2;
 	}
 
@@ -219,14 +238,20 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 //=======================================================================//
 	menu1 :{
 	system("cls");
-        printf("\n------------- SELAMAT DATANG DI ATM MY BANK-----------");
-        printf("\n\n======================Menu Utama========================");
-        printf("\n\n1. CEK SALDO");
-        printf("\n\n2. TARIK TUNAI");
-        printf("\n\n3. TRANSFER");
-        printf("\n\n4. SETOR TUNAI");
-        printf("\n\n5. Keluar");
-        printf("\n\n Masukan pilihan anda: ");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\t\t\t\t               SELAMAT DATANG DI MENU UTAMA        \n\n");
+        printf("\t\t\t\t                       ATM MY BANK                 \n");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\n\n\t\t\t\t MENU UTAMA");
+        printf("\n\t\t\t\t 1. CEK SALDO");
+        printf("\n\t\t\t\t 2. TARIK TUNAI");
+        printf("\n\t\t\t\t 3. TRANSFER");
+        printf("\n\t\t\t\t 4. SETOR TUNAI");
+        printf("\n\t\t\t\t 5. Keluar");
+        printf("\n\t\t\t\t Masukan pilihan anda:\n ");
+        printf ("\t\t\t\t = ");
         scanf("%d", &pilihan);
 
         if (pilihan==1) goto cek_saldo1;
@@ -240,14 +265,20 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 
     menu2 :{
 	system("cls");
-        printf("\n------------- WELCOME TO MY BANK ATM-----------");
-        printf("\n\n======================Main Menu========================");
-        printf("\n\n1. INQUIRY BALANCE");
-        printf("\n\n2. CASH WITHDRAWAL");
-        printf("\n\n3. TRANSFER");
-        printf("\n\n4. CASH DEPOSIT");
-        printf("\n\n5. EXIT");
-        printf("\n\n Enter your choice: ");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\t\t\t\t               WELCOME TO THE MAIN MENU OF         \n\n");
+        printf("\t\t\t\t                       MY BANK ATM                 \n");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\n\n\t\t\t\t MAIN MENU ");
+        printf("\n\t\t\t\t 1. INQUIRY BALANCE");
+        printf("\n\t\t\t\t 2. CASH WITHDRAWAL");
+        printf("\n\t\t\t\t 3. TRANSFER");
+        printf("\n\t\t\t\t 4. CASH DEPOSIT");
+        printf("\n\t\t\t\t 5. EXIT");
+        printf("\n\t\t\t\t Enter your choice: ");
+        printf ("\t\t\t\t = ");
         scanf("%d", &pilihan);
 
         if (pilihan==1) goto cek_saldo2;
@@ -275,18 +306,18 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 //=======================================================================//
 
     cek_saldo1 :{
-    system ("cls");
-		printf ("============================================================================\n");
-        printf("Saldo anda adalah Rp. %d\n\n", saldo);
-        printf ("============================================================================\n");
+        printf ("\t\t\t\t========================================================\n");
+        printf("\n\t\t\t\t                     SALDO ANDA SEBESAR \n" );
+        printf("\n\t\t\t\t                        Rp. %d\n\n", saldo);
+        printf ("\t\t\t\t========================================================\n");
         goto ulang1;
         }
 
     cek_saldo2 :{
-	system ("cls");
-		printf ("============================================================================\n");
-        printf("Your Balance is Rp. %d\n\n", saldo);
-        printf ("============================================================================\n");
+        printf ("\t\t\t\t========================================================\n");
+        printf("\n\t\t\t\t                     YOUR BALANCE IS \n" );
+        printf("\n\t\t\t\t                       Rp. %d\n\n", saldo);
+        printf ("\t\t\t\t========================================================\n");
         goto ulang2;
         }
 
@@ -300,116 +331,123 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 // Dibuat Oleh    : Made Hollanda Putri - 2105551014                     //
 //                                                                       //
 // Versi : 1                                                             //
-// Revisi 1       : Mentranslate tariktunai1 ke dalam bahasa inggris dan //
-//                  mengisi tariktunai2 dengan bahasa yang sudah         //
+// Revisi 1       : Mentranslate ceksaldo1 ke dalam bahasa inggris dan   //
+//                  mengisi ceksaldo2 dengan bahasa yang sudah           //
 //                  ditranslate ke dalam bahasa inggris                  //
 // Direvisi Oleh  : Made Hollanda Putri - 2105551014                     //
 //=======================================================================//
 
     tarik_tunai1 :{
 	system("cls");
-        printf("\n\n====================== PILIH NOMINAL YANG INGIN ANDA AMBIL ========================");
-        printf("\n\n1. 100000");
-        printf("\n\n2. 200000");
-        printf("\n\n3. Pilih jumlah nominal lain");
-        printf("\n\n5. Keluar");
-        printf("\n\nMasukkan pilihan anda: ");
+        printf("\n\n\t\t\t\t====================== PILIH NOMINAL YANG INGIN ANDA AMBIL ========================");
+        printf("\n\n\t\t\t\t 1. 100000");
+        printf("\n\n\t\t\t\t 2. 200000");
+        printf("\n\n\t\t\t\t 3. Pilih jumlah nominal lain");
+        printf("\n\n\t\t\t\t 5. Keluar");
+        printf("\n\n\t\t\t\t Masukkan pilihan anda:\n");
+        printf ("\t\t\t\t = ");
         scanf("%d", &pilihan);
         if(pilihan==1){
         	if(saldo>=100000){
-        	printf("\n\nNominal yang akan anda tarik adalah : Rp. 100000");
-        	printf("\n\nSaldo anda sekarang = Rp. %d", saldo = saldo-100000);
+        	printf("\n\n\t\t\t\t Nominal yang akan anda tarik adalah : Rp. 100000");
+        	printf("\n\n\t\t\t\t Saldo anda sekarang = Rp. %d", saldo = saldo-100000);
 }
         	else if(saldo<100000){
-        	printf("Saldo anda kurang!");
+        	printf("\n\t\t\t\t Saldo anda kurang!");
 			}
 		}
 		else if(pilihan==2){
       		if(saldo>=200000){
-        		printf("\n\nNominal yang akan anda tarik adalah : Rp. 200000");
-        		printf("\n\nSisa saldo anda = Rp. %d", saldo=saldo-200000);
+        		printf("\n\n\t\t\t\t Nominal yang akan anda tarik adalah : Rp. 200000");
+        		printf("\n\n\t\t\t\t Sisa saldo anda = Rp. %d", saldo=saldo-200000);
         	}
         	else if(saldo<200000){
-        	printf("Saldo anda kurang!");
+        	printf("\n\t\t\t\t Saldo anda kurang!");
 			}
 		}
 		else if(pilihan==3){
-		printf("\nMasukkan nominal yang akan anda tarik = ");
+		printf("\n\t\t\t\t Masukkan nominal yang akan anda tarik \n ");
+		printf ("\t\t\t\t = ");
         scanf("%d", &nominal);
 
         	if(saldo>=nominal){
-      		printf("\n\nApakah anda akan menarik uang sebesar Rp. %d ?", nominal);
-        	printf("\n\n1. Ya  2. Tidak\n\n");
-        	printf("\n\nMasukkan pilihan anda = ");
+      		printf("\n\n\t\t\t\t Apakah anda akan menarik uang sebesar Rp. %d ?", nominal);
+        	printf("\n\n\t\t\t\t 1. Ya  2. Tidak\n\n");
+        	printf("\n\n\t\t\t\t Masukkan pilihan anda \n ");
+        	printf ("\t\t\t\t = ");
 
        			scanf("%d", &pilihan);{
       					  if (pilihan==1){
-            			    printf("\n\nTransaksi Berhasil");
-              				printf("\n\nSisa saldo Anda = Rp. %d", saldo=saldo-nominal); }
+            			    printf("\n\n\t\t\t\t Transaksi Berhasil");
+              				printf("\n\n\t\t\t\t Sisa saldo Anda = Rp. %d", saldo=saldo-nominal); }
            				 else if (pilihan==2){
-              				  printf("\n\nTransaksi Dibatalkan");}
+              				  printf("\n\n\t\t\t\t Transaksi Dibatalkan");}
         					}
 						}
         	else if(saldo<nominal){
-        	printf("\nTransaksi Dibatalkan");
-        	printf("\nSaldo anda kurang!");
+        	printf("\n\t\t\t\t Transaksi Dibatalkan");
+        	printf("\n\t\t\t\t Saldo anda kurang!");
        			}
    		}
-        else
-        printf("Masukan pilihan yang benar");
+        else{
+            printf("\n\t\t\t\tMasukan pilihan yang benar\n");
+            printf ("\t\t\t\t = ");}
          goto ulang1;
     }
 
     tarik_tunai2 :{
 	system("cls");
-        printf("\n\n====================== CHOOSE THE NOMINAL YOU DESIRE ========================");
-        printf("\n\n1. 100000");
-        printf("\n\n2. 200000");
-        printf("\n\n3. Enter Another Nominal");
-        printf("\n\n5. Exit");
-        printf("\nEnter your choice: ");
+        printf("\n\n\t\t\t\t ====================== CHOOSE THE NOMINAL YOU DESIRE ========================");
+        printf("\n\n\t\t\t\t 1. 100000");
+        printf("\n\n\t\t\t\t 2. 200000");
+        printf("\n\n\t\t\t\t 3. Enter Another Nominal");
+        printf("\n\n\t\t\t\t 5. Exit");
+        printf("\n\t\t\t\t Enter your choice:\n ");
+        printf ("\t\t\t\t = ");
         scanf("%d", &pilihan);
         if(pilihan==1){
         	if(saldo>=100000){
-        	printf("The nominal you will withdraw is : Rp. 100000");
-        	printf("\n\nYour balance is = Rp. %d", saldo = saldo-100000);
+        	printf("\n\n\t\t\t\tThe nominal you will withdraw is : Rp. 100000");
+        	printf("\n\n\t\t\t\tYour balance is = Rp. %d", saldo = saldo-100000);
 }
         	else if(saldo<100000){
-        	printf("Your balance is not enough!");
+        	printf("\n\t\t\t\tYour balance is not enough!");
 			}
 		}
 		else if(pilihan==2){
       	 	if(saldo>=200000){
-        		printf("The nominal you will withdraw is : Rp. 200000");
-        		printf("\n\nYour Balance is = Rp. %d", saldo=saldo-200000);
+        		printf("\n\n\t\t\t\tThe nominal you will withdraw is : Rp. 200000");
+        		printf("\n\n\t\t\t\tYour Balance is = Rp. %d", saldo=saldo-200000);
         	}
         	else if(saldo<200000){
-        	printf("Your balance is not enough!");
+        	printf("\n\t\t\t\tYour balance is not enough!");
 			}
 		}
 		else if(pilihan==3){
-		printf("Enter the nominal you will withdraw = ");
+		printf("\n\t\t\t\t the nominal you will withdraw = ");
         scanf("%d", &nominal);
 
         	if(saldo>=nominal){
-      		printf("Is the nominal Rp. %d that you will withdraw correct?", nominal);
-        	printf("\n\n1. Yes 2. No\n\n");
-        	printf("\n\nEnter your choice = ");
+      		printf("\n\n\t\t\t\tIs the nominal Rp. %d that you will withdraw correct?", nominal);
+        	printf("\n\n\t\t\t\t 1. Yes 2. No\n\n");
+        	printf("\n\n\t\t\t\t Enter your choice \n ");
+        	printf ("\t\t\t\t = ");
 
        			scanf("%d", &pilihan);{
       					  if (pilihan==1){
-            			    printf("\n\nTransaction was successful");
-              				printf("\n\nYour Balance is = Rp. %d", saldo=saldo-nominal); }
+            			    printf("\n\n\t\t\t\tTransaction was successful");
+              				printf("\n\n\t\t\t\t Your Balance is = Rp. %d", saldo=saldo-nominal); }
            				 else
-              				  printf("\nTransaction failed");
+              				  printf("\n\t\t\t\tTransaction failed");
         					}
 							}
         	else if(saldo<nominal){
-        	printf("Your balance is not enough!");
+        	printf("\n\t\t\t\t Your balance is not enough!");
        }
    }
         else
-        printf("Please enter the right number!");
+        printf("\n\t\t\t\t Please enter the right number!");
+        printf ("\n\t\t\t\t = ");
         goto ulang2;
     }
 
@@ -433,29 +471,29 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 
     transfer1 :{
 	system("cls");
-        printf ("**************************************************************************\n");
-        printf("Silahkan masukkan nomor rekening tujuan anda = ");
+        printf ("\n\t\t\t\t**************************************************************************\n");
+        printf("\n\t\t\t\t Silahkan masukkan nomor rekening tujuan anda = ");
         scanf("%d", &transfer);
-        printf ("**************************************************************************\n");
-        printf("\n\nMasukkan nominal yang akan anda transfer = ");
+        printf ("\n\t\t\t\t **************************************************************************\n");
+        printf("\n\n\t\t\t\t Masukkan nominal yang akan anda transfer = ");
         scanf("%d", &nominal);
-        printf("\n\nApakah anda ingin mentransfer %d ke rekening %d?", nominal, transfer);
-        printf("\n\n1. Ya  2. Tidak\n\n");
-        printf("\nMasukkan pilihan anda = ");
+        printf("\n\n\t\t\t\tApakah anda ingin mentransfer %d ke rekening %d?", nominal, transfer);
+        printf("\n\n\t\t\t\t1. Ya  2. Tidak\n\n");
+        printf("\n\n\t\t\t\t Masukkan pilihan anda = ");
         scanf("%d", &pilihan);
 {
          if(pilihan==1){
         	if(nominal<=saldo){
-        	printf("Transaksi Berhasil");
-        	printf("\n\nSisa Saldo Anda = Rp. %d", saldo = saldo-nominal);
+        	printf("\n\t\t\t\tTransaksi Berhasil");
+        	printf("\n\n\t\t\t\tSisa Saldo Anda = Rp. %d", saldo = saldo-nominal);
 }
         	else if(nominal>saldo){
-        	printf("\nTransaksi Dibatalkan");
-        	printf("\n\nSaldo anda kurang!");
+        	printf("\n\n\t\t\t\tTransaksi Dibatalkan");
+        	printf("\n\n\t\t\t\tSaldo anda kurang!");
 			}
 		}
 		else if(pilihan==2){
-      		printf("Transaksi di Batalkan!");
+      		printf("\n\t\t\t\tTransaksi di Batalkan!");
 			}
 		}
         goto ulang1;
@@ -464,29 +502,29 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 
     transfer2 :{
 	system("cls");
-        printf ("**************************************************************************\n");
-        printf("Please enter the bank account destination = ");
+        printf ("\n\t\t\t\t **************************************************************************\n");
+        printf("\n\t\t\t\t Please enter the bank account destination = ");
         scanf("%d", &transfer);
-        printf ("**************************************************************************\n");
-        printf("\n\nPlease enter the nominal = ");
+        printf ("\n\t\t\t\t **************************************************************************\n");
+        printf("\n\n\t\t\t\tPlease enter the nominal = ");
         scanf("%d", &nominal);
-        printf("\n\nDo you want to transfer %d to %d bank account?", nominal, transfer);
-        printf("\n\n1. Yes  2. No\n\n");
-        printf("\nEnter your choice = ");
+        printf("\n\n\t\t\t\tDo you want to transfer %d to %d bank account?", nominal, transfer);
+        printf("\n\n\t\t\t\t1. Yes  2. No\n\n");
+        printf("\n\n\t\t\t\t Enter your choice = ");
         scanf("%d", &pilihan);
 {
          if(pilihan==1){
         	if(nominal<=saldo){
-        	printf("\n\nTransaction was successful");
-        	printf("\n\nYour balance is  = Rp. %d", saldo = saldo-nominal);
+        	printf("\n\n\t\t\t\tTransaction was successful");
+        	printf("\n\n\t\t\t\tYour balance is  = Rp. %d", saldo = saldo-nominal);
 }
         	else if(nominal>saldo){
-        	printf("Transaction failed");
-        	printf("\n\nYour Balance is not enough!");
+        	printf("\n\t\t\t\t Transaction failed");
+        	printf("\n\n\t\t\t\t Your Balance is not enough!");
 			}
 		}
 		else if(pilihan==2){
-      		printf("Enter the right number!");
+      		printf("\n\t\t\t\t Enter the right number!");
 			}
 		}
         goto ulang2;
@@ -512,21 +550,21 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 
     setor_tunai1 :{
 	system("cls");
-        printf ("**************************************************************************\n");
-        printf("Masukkan nominal yang akan anda setor = ");
+        printf ("\n\t\t\t\t **************************************************************************\n");
+        printf("\n\t\t\t\t Masukkan nominal yang akan anda setor = ");
         scanf("%d", &nominal);
-        printf ("**************************************************************************\n");
-        printf("\nLetakan uang anda di dalam mesin!\n");
-		printf("\n\nApakah anda ingin melakukan setor tunai sebesar : Rp. %d?", nominal);
-        printf("\n\n1. Ya  2. Tidak\n\n");
-        printf("\n\nMasukkan pilihan anda = ");
+        printf ("\n\t\t\t\t **************************************************************************\n");
+        printf("\n\n\t\t\t\t Letakan uang anda di dalam mesin!\n");
+		printf("\n\n\t\t\t\t Apakah anda ingin melakukan setor tunai sebesar : Rp. %d?", nominal);
+        printf("\n\n\t\t\t\t 1. Ya  2. Tidak\n\n");
+        printf("\n\n\t\t\t\t Masukkan pilihan anda = ");
         scanf("%d", &pilihan);
         if(pilihan==1){
-        	printf("\nTransaksi Berhasil");
-    		printf("\n\nSisa saldo anda = Rp. %d", saldo = saldo+nominal);
+        	printf("\n\n\t\t\t\t Transaksi Berhasil");
+    		printf("\n\n\t\t\t\t Sisa saldo anda = Rp. %d", saldo = saldo+nominal);
     }
 		else if(pilihan==2){
-      		printf("Transaksi di Batalkan!");
+      		printf("\n\t\t\t\tTransaksi di Batalkan!");
 			}
         goto ulang1;
     }
@@ -534,21 +572,21 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 
     setor_tunai2 : {
     system("cls");
-        printf ("**************************************************************************\n");
-        printf("Please enter the nominal = ");
+        printf ("\n\t\t\t\t **************************************************************************\n");
+        printf("\n\t\t\t\t Please enter the nominal = ");
         scanf("%d", &nominal);
-        printf ("**************************************************************************\n");
-        printf("\n\nPlace the balance into the ATM Machine!\n");
-		printf("\n\nDo you want to deposit Rp. %d?", nominal);
-        printf("\n\n1. Yes  2. No\n\n");
-        printf("\n\nEnter your choice = ");
+        printf ("\n\t\t\t\t **************************************************************************\n");
+        printf("\n\n\t\t\t\t Place the balance into the ATM Machine!\n");
+		printf("\n\n\t\t\t\t Do you want to deposit Rp. %d?", nominal);
+        printf("\n\n\t\t\t\t 1. Yes  2. No\n\n");
+        printf("\n\n\t\t\t\t Enter your choice = ");
         scanf("%d", &pilihan);
         if(pilihan==1){
-        	printf("\nTransaction successful");
-    		printf("\n\nYour balance is = Rp. %d", saldo = saldo+nominal);
+        	printf("\n\n\t\t\t\t Transaction successful");
+    		printf("\n\n\t\t\t\t Your balance is = Rp. %d", saldo = saldo+nominal);
 }
 		else if(pilihan==2){
-      		printf("Transaction failed!");
+      		printf("\n\t\t\t\t Transaction failed!");
       		}
         goto ulang2;
 }
@@ -571,8 +609,8 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 //=======================================================================//
 
     ulang1 : {
-	    printf("\n\nApakah Anda Ingin Transaksi Lagi?");
-        printf("\n\n1. Ya 2. Tidak = ");
+	    printf("\n\n\t\t\t\t Apakah Anda Ingin Transaksi Lagi?");
+        printf("\n\n\t\t\t\t 1. Ya 2. Tidak = ");
         scanf("%d", &pilihan);
     system("cls");
             if (pilihan==1) goto menu1;
@@ -581,8 +619,8 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 
 
     ulang2 :{
-        printf("\n\nDo you want to make another transaction?");
-        printf("\n\n1. Yes 2. No = ");
+        printf("\n\n\t\t\t\t Do you want to make another transaction?");
+        printf("\n\n\t\t\t\t1. Yes 2. No = ");
         scanf("%d", &pilihan);
     system("cls");
             if (pilihan==1) goto menu2;
@@ -604,14 +642,20 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 
 	end : {
 	system ("cls");
-        printf ("**************************************************************************\n");
-        printf ("**************************************************************************\n");
-        printf("            TERIMA KASIH TELAH MENGGUNAKAN PROGRAM INI\n\n\n");
-        printf("                THANK YOU FOR USING THIS PROGRAM\n");
-        printf ("**************************************************************************\n");
-        printf ("**************************************************************************\n");
+        printf("\t\t\t\t==================================================\n\n");
+        printf("\t\t\t\t    TERIMA KASIH TELAH MENGGUNAKAN PROGRAM INI\n\n");
+        printf("\t\t\t\t         THANK YOU FOR USING THIS PROGRAM\n\n");
+        printf("\t\t\t\t==================================================\n\n");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\t\t\t\t*************** Program ATM MY BANK ***************\n");
+        printf("\t\t\t\t ==================================================\n");
+        printf("\t\t\t\t*                        Oleh                      *\n");
+        printf("\t\t\t\t*               1. Made Hollanda Putri             *\n");
+        printf("\t\t\t\t*               2. Jesica Syalomitha               *\n");
+        printf("\t\t\t\t ==================================================\n\n\n");
     }
 	return (0);
 }
+
 
 
