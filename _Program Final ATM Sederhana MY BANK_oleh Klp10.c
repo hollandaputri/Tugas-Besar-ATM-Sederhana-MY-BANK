@@ -67,8 +67,12 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 	}
 
         else {
-            printf ("MAAF, USERNAME ATAU PASSWORD ANDA SALAH");
-		goto login;
+            pprintf ("\t\t\t\t MAAF, USERNAME ATAU PASSWORD ANDA SALAH\n");
+            printf ("\n\t\t\t\t Tekan 1 UNTUK ULANG\n");
+            printf("\t\t\t\t========================\n");
+            printf ("\t\t\t\t = ");
+            scanf  ("%d" , &pilihan );
+                if (pilihan = 1) goto login;
 	}
 	}
 
