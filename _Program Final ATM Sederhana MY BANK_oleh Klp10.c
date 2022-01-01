@@ -8,12 +8,14 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <time.h>
 
 
     int main(){
     int bahasa, menu_awal, end, pin, pilihan, tarik_tunai1,
         transfer1, setor_tunai1, setoran, tarik_tunai2, transfer2,
         setor_tunai2, nominal, transfer, ulang1, ulang2, saldo = 500000;
+    time_t t ;
     char username[10];
 	char kode[10];
 
@@ -67,13 +69,14 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 	}
 
         else {
-            pprintf ("\t\t\t\t MAAF, USERNAME ATAU PASSWORD ANDA SALAH\n");
+            printf ("\t\t\t\t MAAF, USERNAME ATAU PASSWORD ANDA SALAH\n");
             printf ("\n\t\t\t\t Tekan 1 UNTUK ULANG\n");
             printf("\t\t\t\t========================\n");
             printf ("\t\t\t\t = ");
             scanf  ("%d" , &pilihan );
                 if (pilihan = 1) goto login;
-	}
+
+    }
 	}
 
 //=======================================================================//
@@ -220,7 +223,7 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
         printf("\t\t\t\t ==================================================\n");
         printf("\t\t\t\t ==================================================\n");
         printf("\t\t\t\t                       WELCOME TO                \n\n");
-        printf("\t\t\t\t                     # MY BANK ATM #               \n");
+        printf("\t\t\t\t                     # MY BANK' ATM #               \n");
         printf("\t\t\t\t ==================================================\n");
         printf("\t\t\t\t ==================================================\n");
     goto menu2;
@@ -314,6 +317,10 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
         printf("\n\t\t\t\t                     SALDO ANDA SEBESAR \n" );
         printf("\n\t\t\t\t                        Rp. %d\n\n", saldo);
         printf ("\t\t\t\t========================================================\n");
+        time_t ambil_waktu;
+        time(&ambil_waktu);
+        printf("\n\t\t\t\tWaktu Transaksi : %s ", ctime (&ambil_waktu));
+
         goto ulang1;
         }
 
@@ -322,6 +329,9 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
         printf("\n\t\t\t\t                     YOUR BALANCE IS \n" );
         printf("\n\t\t\t\t                       Rp. %d\n\n", saldo);
         printf ("\t\t\t\t========================================================\n");
+        time_t ambil_waktu;
+        time(&ambil_waktu);
+        printf("\n\t\t\t\tTransaction time : %s ", ctime (&ambil_waktu));
         goto ulang2;
         }
 
@@ -396,6 +406,10 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
         else{
             printf("\n\t\t\t\tMasukan pilihan yang benar\n");
             printf ("\t\t\t\t = ");}
+
+        time_t ambil_waktu;
+        time(&ambil_waktu);
+        printf("\n\t\t\t\tWaktu Transaksi : %s ", ctime (&ambil_waktu));
          goto ulang1;
     }
 
@@ -452,6 +466,10 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
         else
         printf("\n\t\t\t\t Please enter the right number!");
         printf ("\n\t\t\t\t = ");
+
+        time_t ambil_waktu;
+        time(&ambil_waktu);
+        printf("\n\t\t\t\tTransaction time : %s ", ctime (&ambil_waktu));
         goto ulang2;
     }
 
@@ -500,6 +518,9 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
       		printf("\n\t\t\t\tTransaksi di Batalkan!");
 			}
 		}
+        time_t ambil_waktu;
+        time(&ambil_waktu);
+        printf("\n\t\t\t\tWaktu Transaksi : %s ", ctime (&ambil_waktu));
         goto ulang1;
     }
 
@@ -531,6 +552,10 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
       		printf("\n\t\t\t\t Enter the right number!");
 			}
 		}
+
+		time_t ambil_waktu;
+        time(&ambil_waktu);
+        printf("\n\t\t\t\tTransaction time : %s ", ctime (&ambil_waktu));
         goto ulang2;
 }
 
@@ -570,6 +595,9 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 		else if(pilihan==2){
       		printf("\n\t\t\t\tTransaksi di Batalkan!");
 			}
+        time_t ambil_waktu;
+        time(&ambil_waktu);
+        printf("\n\t\t\t\tWaktu Transaksi : %s ", ctime (&ambil_waktu));
         goto ulang1;
     }
 
@@ -592,6 +620,9 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 		else if(pilihan==2){
       		printf("\n\t\t\t\t Transaction failed!");
       		}
+        time_t ambil_waktu;
+        time(&ambil_waktu);
+        printf("\n\t\t\t\tTransaction time : %s ", ctime (&ambil_waktu));
         goto ulang2;
 }
 
