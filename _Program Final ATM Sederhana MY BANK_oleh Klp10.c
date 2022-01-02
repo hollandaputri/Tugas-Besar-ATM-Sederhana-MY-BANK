@@ -496,7 +496,30 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
         printf ("\n\t\t\t\t**************************************************************************\n");
         printf("\n\t\t\t\t Silahkan masukkan nomor rekening tujuan anda = ");
         scanf("%d", &transfer);
-        printf ("\n\t\t\t\t **************************************************************************\n");
+    if (transfer == 2105551014) {
+        printf("\n\n");
+        printf("\t\t\t\t================================================\n");
+        printf("\n\t\t\t\t Rekening tujuan anda = \n");
+        printf("\t\t\t\t Nama: %s\n", pemilik_rekening_1.nama);
+        printf("\t\t\t\t Nomor Rekening: %s\n", pemilik_rekening_1.norek);}
+
+    else if (transfer == 2105551043){
+        printf("\n\n");
+        printf("\t\t\t\t================================================\n");
+        printf("\n\t\t\t\t Rekening tujuan anda = \n");
+        printf("\t\t\t\t Nama: %s\n",  pemilik_rekening_2.nama);
+        printf("\t\t\t\t Nomor Rekening: %s\n",  pemilik_rekening_2.norek);}
+
+
+    else {
+        printf ("\n\t\t\t\t Rekening Tidak Terdaftar\n");
+        printf("\t\t\t\t========================\n");
+        printf("\n\n\t\t\t\tMasukan Ulang Nomor Rekening Tujuan Anda\n");
+        printf("\n\n\t\t\t\t1. Ya  2. Tidak\n\n");
+        printf("\n\n\t\t\t\t Masukkan pilihan anda = ");
+        scanf("%d", &pilihan);
+        goto transfer1 ;}
+
         printf("\n\n\t\t\t\t Masukkan nominal yang akan anda transfer = ");
         scanf("%d", &nominal);
         printf("\n\n\t\t\t\tApakah anda ingin mentransfer %d ke rekening %d?", nominal, transfer);
@@ -530,7 +553,32 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
         printf ("\n\t\t\t\t **************************************************************************\n");
         printf("\n\t\t\t\t Please enter the bank account destination = ");
         scanf("%d", &transfer);
-        printf ("\n\t\t\t\t **************************************************************************\n");
+        
+       if (transfer == 2105551014) {
+        printf("\n\n");
+        printf("\t\t\t\t================================================\n");
+        printf("\n\t\t\t\t Your destination bank account\n");
+        printf("\t\t\t\t Name:%s\n", pemilik_rekening_1.nama);
+        printf("\t\t\t\t Account number: %s\n", pemilik_rekening_1.norek);}
+
+    else if (transfer == 2105551043){
+        printf("\n\n");
+        printf("\t\t\t\t================================================\n");
+        printf("\n\t\t\t\t Your destination bank account\n");
+        printf("\t\t\t\t Nama: %s\n",  pemilik_rekening_2.nama);
+        printf("\t\t\t\t Account number: %s\n",  pemilik_rekening_2.norek);}
+
+
+    else {
+        printf ("\n\t\t\t\t Account not registered\n");
+        printf("\t\t\t\t========================\n");
+        printf("\n\n\t\t\t\tRe-enter your Destination Account Number\n");
+        printf("\n\n\t\t\t\t1. Yes 2. No\n\n");
+        printf("\n\n\t\t\t\t Enter your choice = ");
+        scanf("%d", &pilihan);
+        goto transfer2;}
+       
+       
         printf("\n\n\t\t\t\tPlease enter the nominal = ");
         scanf("%d", &nominal);
         printf("\n\n\t\t\t\tDo you want to transfer %d to %d bank account?", nominal, transfer);
@@ -691,6 +739,8 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
     }
 	return (0);
 }
+
+
 
 
 
