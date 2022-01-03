@@ -1,0 +1,109 @@
+
+		                           TRANSAKSI TRANSFER
+		                       -----------------------------
+
+		   			Pemilik Rekening  : Jesica Syalomitha
+
+
+		   			Nomor Rekening    : 2105551043
+
+
+		            		Nominal Penarikan : 6551888
+
+
+		            		Sisa Saldo        : 300000
+										
+				
+				Waktu Transaksi   : Mon Jan 03 17:29:48 2022
+ 
+		                       -----------------------------
+		                           TRANSAKSI TRANSFER
+		                       -----------------------------
+
+		   			Pemilik Rekening  : Jesica Syalomitha
+
+
+		   			Nomor Rekening    : 2105551043
+
+
+		            		Nominal Penarikan : 6551888
+
+
+		            		Sisa Saldo        : 100000
+										
+
+				Waktu Transaksi   : Mon Jan 03 17:29:48 2022
+ 
+		                       -----------------------------
+		                           TRANSAKSI TRANSFER
+		                       -----------------------------
+
+		   			Pemilik Rekening  : Jesica Syalomitha
+
+
+		   			Nomor Rekening    : 2105551043
+
+
+		            		Nominal Penarikan : 6551888
+
+
+		            		Sisa Saldo        : 300000
+
+										
+				Waktu Transaksi   : Mon Jan 03 17:31:56 2022
+ 
+		                       -----------------------------
+		                           TRANSAKSI TRANSFER
+		                       -----------------------------
+
+		   		Pemilik Rekening  : Jesica Syalomitha
+
+
+		   		Nomor Rekening    : 2105551043
+
+
+		            	Nominal Penarikan : 6551888
+
+
+		            	Sisa Saldo        : 300000
+										
+
+				Waktu Transaksi   : Mon Jan 03 17:31:56 2022
+ 
+		                       -----------------------------
+		                           TRANSAKSI TRANSFER
+		                       -----------------------------
+
+		   		Pemilik Rekening  : Jesica Syalomitha
+
+
+		   		Nomor Rekening    : 2105551043
+
+
+		            	Nominal Penarikan : 6551888
+
+
+		            	Sisa Saldo        : 300000
+										
+
+				Waktu Transaksi   : Mon Jan 03 17:31:56 2022
+ 
+		                       -----------------------------
+		                           TRANSAKSI TRANSFER
+		                       -----------------------------
+
+		   		Pemilik Rekening  : Jesica Syalomitha
+
+
+		   		Nomor Rekening    : 2105551043
+
+
+		            	Nominal Penarikan : 6551888
+
+
+		            	Sisa Saldo        : 200000
+
+				Waktu Transaksi   : Mon Jan 03 17:33:14 2022
+
+
+		                       -----------------------------

@@ -1,0 +1,77 @@
+
+		                           TRANSAKSI TARIK TUNAI
+		                       -----------------------------
+
+		   			Pemilik Rekening  : Jesica Syalomitha
+
+
+		   			Nomor Rekening    : 2105551043
+
+
+		            		Nominal Penarikan : 500000
+
+
+		            		Sisa Saldo        : 500000
+
+
+				Waktu Transaksi   : Mon Jan 03 17:29:48 2022
+
+
+		                       -----------------------------
+		                           TRANSAKSI TARIK TUNAI
+		                       -----------------------------
+
+		   			Pemilik Rekening  : Jesica Syalomitha
+
+
+		   			Nomor Rekening    : 2105551043
+
+
+		            		Nominal Penarikan : 200000
+
+
+		            		Sisa Saldo        : 300000
+
+
+				Waktu Transaksi   : Mon Jan 03 17:29:51 2022
+
+
+		                       -----------------------------
+		                           TRANSAKSI TARIK TUNAI
+		                       -----------------------------
+
+		   			Pemilik Rekening  : Jesica Syalomitha
+
+
+		   			Nomor Rekening    : 2105551043
+
+
+		            		Nominal Penarikan : 500000
+
+
+		            		Sisa Saldo        : 500000
+
+
+				Waktu Transaksi   : Mon Jan 03 17:31:56 2022
+
+
+		                       -----------------------------
+		                           TRANSAKSI TARIK TUNAI
+		                       -----------------------------
+
+		   			Pemilik Rekening  : Jesica Syalomitha
+
+
+		   			Nomor Rekening    : 2105551043
+
+
+		            		Nominal Penarikan : 200000
+
+
+		            		Sisa Saldo        : 300000
+
+
+				Waktu Transaksi   : Mon Jan 03 17:31:59 2022
+
+
+		                       -----------------------------
