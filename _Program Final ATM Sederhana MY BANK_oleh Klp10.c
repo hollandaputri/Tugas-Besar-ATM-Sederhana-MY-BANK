@@ -415,16 +415,17 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 // Direvisi Oleh  : Made Hollanda Putri - 2105551014                     //
 //=======================================================================//
 
-    tarik_tunai1 :{
+  tarik_tunai1 :{
 	system("cls");
+
         printf("\n\n\t\t\t\t====================== PILIH NOMINAL YANG INGIN ANDA AMBIL ========================");
         printf("\n\n\t\t\t\t 1. 100000");
         printf("\n\n\t\t\t\t 2. 200000");
         printf("\n\n\t\t\t\t 3. Pilih jumlah nominal lain");
-        printf("\n\n\t\t\t\t 5. Keluar");
         printf("\n\n\t\t\t\t Masukkan pilihan anda:\n");
         printf ("\t\t\t\t = ");
         scanf("%d", &pilihan);
+
         if(pilihan==1){
         	if(saldo>=100000){
         	printf("\n\n\t\t\t\t Nominal yang akan anda tarik adalah : Rp. 100000");
@@ -471,9 +472,44 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
             printf("\n\t\t\t\tMasukan pilihan yang benar\n");
             printf ("\t\t\t\t = ");}
 
+
+         if (pin ==111000){
+        printf("\n\t\t\t\t Pemilik Rekening	: %s\n", pemilik_rekening_1.nama);
+        printf("\t\t\t\t Nomor Rekening 	: %s\n", pemilik_rekening_1.norek);
         time_t ambil_waktu;
         time(&ambil_waktu);
-        printf("\n\t\t\t\tWaktu Transaksi : %s ", ctime (&ambil_waktu));
+        printf("\n\t\t\t\t Waktu Transaksi  : %s ", ctime (&ambil_waktu));
+        FILE *history_tariktunai;
+            history_tariktunai=fopen("history_tariktunai.txt","a");
+    		fprintf(history_tariktunai,"\n\t\t  TRANSAKSI TARIK TUNAI");
+    		fprintf(history_tariktunai,"\n\t\t-----------------------------");
+       		fprintf(history_tariktunai,"\n\t\t\tPemilik Rekening  : %s\n",  pemilik_rekening_1.nama);
+       		fprintf(history_tariktunai,"\n\t\t\tNomor Rekening    : %s\n",  pemilik_rekening_1.norek);
+    		fprintf(history_tariktunai,"\n\t\t\tNominal Penarikan : %d\n", nominal);
+    		fprintf(history_tariktunai,"\n\t\t\tSisa Saldo        : %d\n", saldo);
+    		fprintf(history_tariktunai,"\n\t\t\tWaktu Transaksi   : %s\n", ctime (&ambil_waktu));
+    		fprintf(history_tariktunai,"\n\t\t-----------------------------");
+    		fclose(history_tariktunai);
+        }
+                else if (pin==111001){
+        printf("\t\t\t\t Pemilik Rekening	: %s\n", pemilik_rekening_2.nama);
+        printf("\t\t\t\t Nomor Rekening 	: %s\n", pemilik_rekening_2.norek);
+        time_t ambil_waktu;
+        time(&ambil_waktu);
+        printf("\n\t\t\t\t Waktu Transaksi  : %s ", ctime (&ambil_waktu));
+        FILE *history_tariktunai;
+            history_tariktunai=fopen("history_tariktunai.txt","a");												//Menyimpan bukti data tariktunai pada file jenis txt
+    		fprintf(history_tariktunai,"\n\t\t  TRANSAKSI TARIK TUNAI");
+    		fprintf(history_tariktunai,"\n\t\t-----------------------------");
+       		fprintf(history_tariktunai,"\n\t\t\tPemilik Rekening  : %s\n",  pemilik_rekening_2.nama);
+       		fprintf(history_tariktunai,"\n\t\t\tNomor Rekening    : %s\n",  pemilik_rekening_2.norek);
+    		fprintf(history_tariktunai,"\n\t\t\tNominal Penarikan : %d\n", nominal);
+    		fprintf(history_tariktunai,"\n\t\t\tSisa Saldo        : %d\n", saldo);
+    		fprintf(history_tariktunai,"\n\t\t\tWaktu Transaksi   : %s\n", ctime (&ambil_waktu));
+    		fprintf(history_tariktunai,"\n\t\t-----------------------------");
+    		fclose(history_tariktunai);
+        }
+
          goto ulang1;
     }
 
@@ -527,13 +563,48 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
         	printf("\n\t\t\t\t Your balance is not enough!");
        }
    }
-        else
+        else {
         printf("\n\t\t\t\t Please enter the right number!");
-        printf ("\n\t\t\t\t = ");
+        printf ("\n\t\t\t\t = ");}
 
+         if (pin ==111000){
+        printf("\n\t\t\t\t Bank Account Owner	: %s\n", pemilik_rekening_1.nama);
+        printf("\t\t\t\t Bank Account Number	: %s\n", pemilik_rekening_1.norek);
         time_t ambil_waktu;
         time(&ambil_waktu);
-        printf("\n\t\t\t\tTransaction time : %s ", ctime (&ambil_waktu));
+        printf("\n\t\t\t\t Transaction time : %s ", ctime (&ambil_waktu));
+        FILE *history_tariktunai;
+            history_tariktunai=fopen("history_tariktunai.txt","a");
+    		fprintf(history_tariktunai,"\n\t\t  TRANSAKSI TARIK TUNAI");
+    		fprintf(history_tariktunai,"\n\t\t-----------------------------");
+       		fprintf(history_tariktunai,"\n\t\t\tPemilik Rekening  : %s\n",  pemilik_rekening_1.nama);
+       		fprintf(history_tariktunai,"\n\t\t\tNomor Rekening    : %s\n",  pemilik_rekening_1.norek);
+    		fprintf(history_tariktunai,"\n\t\t\tNominal Penarikan : %d\n", nominal);
+    		fprintf(history_tariktunai,"\n\t\t\tSisa Saldo        : %d\n", saldo);
+    		fprintf(history_tariktunai,"\n\t\t\tWaktu Transaksi   : %s\n", ctime (&ambil_waktu));
+    		fprintf(history_tariktunai,"\n\t\t-----------------------------");
+    		fclose(history_tariktunai);
+
+        }
+                else if (pin==111001){
+        printf("\t\t\t\t Bank Account Owner	    : %s\n", pemilik_rekening_2.nama);
+        printf("\t\t\t\t Bank Account Number 	: %s\n", pemilik_rekening_2.norek);
+        time_t ambil_waktu;
+        time(&ambil_waktu);
+        printf("\n\t\t\t\t Transaction time : %s ", ctime (&ambil_waktu));
+        FILE *history_tariktunai;
+            history_tariktunai=fopen("history_tariktunai.txt","a");												//Menyimpan bukti data tariktunai pada file jenis txt
+    		fprintf(history_tariktunai,"\n\t\t  TRANSAKSI TARIK TUNAI");
+    		fprintf(history_tariktunai,"\n\t\t-----------------------------");
+       		fprintf(history_tariktunai,"\n\t\t\tPemilik Rekening  : %s\n",  pemilik_rekening_2.nama);
+       		fprintf(history_tariktunai,"\n\t\t\tNomor Rekening    : %s\n",  pemilik_rekening_2.norek);
+    		fprintf(history_tariktunai,"\n\t\t\tNominal Penarikan : %d\n", nominal);
+    		fprintf(history_tariktunai,"\n\t\t\tSisa Saldo        : %d\n", saldo);
+    		fprintf(history_tariktunai,"\n\t\t\tWaktu Transaksi   : %s\n", ctime (&ambil_waktu));
+    		fprintf(history_tariktunai,"\n\t\t-----------------------------");
+    		fclose(history_tariktunai);
+        }
+
         goto ulang2;
     }
 
@@ -605,9 +676,44 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
       		printf("\n\t\t\t\tTransaksi di Batalkan!");
 			}
 		}
+
+        if (pin ==111000){
+        printf("\n\t\t\t\t Pemilik Rekening	: %s\n", pemilik_rekening_1.nama);
+        printf("\t\t\t\t Nomor Rekening 	: %s\n", pemilik_rekening_1.norek);
         time_t ambil_waktu;
         time(&ambil_waktu);
-        printf("\n\t\t\t\tWaktu Transaksi : %s ", ctime (&ambil_waktu));
+        printf("\n\t\t\t\t Waktu Transaksi  : %s ", ctime (&ambil_waktu));
+        FILE*history_transfer;
+            history_transfer=fopen("history_transfer.txt","a");													//Menyimpan bukti data transfer pada file jenis txt
+    		fprintf(history_transfer,"\n\t\t TRANSAKSI TRANSFER");
+    		fprintf(history_transfer,"\n\t\t-----------------------------");
+       		fprintf(history_transfer,"\n\t\t\tPemilik Rekening  : %s\n",  pemilik_rekening_1.nama);
+       		fprintf(history_transfer,"\n\t\t\tNomor Rekening    : %s\n",  pemilik_rekening_1.norek);
+    		fprintf(history_transfer,"\n\t\t\tNominal Transfer  : %d\n", nominal);
+    		fprintf(history_transfer,"\n\t\t\tSisa Saldo        : %d\n", saldo);
+    		fprintf(history_transfer,"\n\t\t\tWaktu Transaksi   : %s\n", ctime (&ambil_waktu));
+    		fprintf(history_transfer,"\n\t\t-----------------------------");
+    		fclose(history_transfer);
+        }
+                else if (pin==111001){
+        printf("\t\t\t\t Pemilik Rekening	: %s\n", pemilik_rekening_2.nama);
+        printf("\t\t\t\t Nomor Rekening 	: %s\n", pemilik_rekening_2.norek);
+        time_t ambil_waktu;
+        time(&ambil_waktu);
+        printf("\n\t\t\t\t Waktu Transaksi  : %s ", ctime (&ambil_waktu));
+        FILE*history_transfer;
+            history_transfer=fopen("history_transfer.txt","a");													//Menyimpan bukti data transfer pada file jenis txt
+    		fprintf(history_transfer,"\n\t\t TRANSAKSI TRANSFER");
+    		fprintf(history_transfer,"\n\t\t-----------------------------");
+       		fprintf(history_transfer,"\n\t\t\tPemilik Rekening  : %s\n",  pemilik_rekening_2.nama);
+       		fprintf(history_transfer,"\n\t\t\tNomor Rekening    : %s\n",  pemilik_rekening_2.norek);
+    		fprintf(history_transfer,"\n\t\t\tNominal Transfer  : %d\n", nominal);
+    		fprintf(history_transfer,"\n\t\t\tSisa Saldo        : %d\n", saldo);
+    		fprintf(history_transfer,"\n\t\t\tWaktu Transaksi   : %s\n", ctime (&ambil_waktu));
+    		fprintf(history_transfer,"\n\t\t-----------------------------");
+    		fclose(history_transfer);
+        }
+
         goto ulang1;
     }
 
@@ -617,7 +723,7 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
         printf ("\n\t\t\t\t **************************************************************************\n");
         printf("\n\t\t\t\t Please enter the bank account destination = ");
         scanf("%d", &transfer);
-        
+
        if (transfer == 2105551014) {
         printf("\n\n");
         printf("\t\t\t\t================================================\n");
@@ -641,8 +747,8 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
         printf("\n\n\t\t\t\t Enter your choice = ");
         scanf("%d", &pilihan);
         goto transfer2;}
-       
-       
+
+
         printf("\n\n\t\t\t\tPlease enter the nominal = ");
         scanf("%d", &nominal);
         printf("\n\n\t\t\t\tDo you want to transfer %d to %d bank account?", nominal, transfer);
@@ -665,9 +771,43 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 			}
 		}
 
-		time_t ambil_waktu;
+         if (pin ==111000){
+        printf("\n\t\t\t\t Bank Account Owner	: %s\n", pemilik_rekening_1.nama);
+        printf("\t\t\t\t Bank Account Number	: %s\n", pemilik_rekening_1.norek);
+        time_t ambil_waktu;
         time(&ambil_waktu);
-        printf("\n\t\t\t\tTransaction time : %s ", ctime (&ambil_waktu));
+        printf("\n\t\t\t\t Transaction time : %s ", ctime (&ambil_waktu));
+        FILE*history_transfer;
+            history_transfer=fopen("history_transfer.txt","a");													//Menyimpan bukti data transfer pada file jenis txt
+    		fprintf(history_transfer,"\n\t\t TRANSAKSI TRANSFER");
+    		fprintf(history_transfer,"\n\t\t-----------------------------");
+       		fprintf(history_transfer,"\n\t\t\tPemilik Rekening  : %s\n",  pemilik_rekening_1.nama);
+       		fprintf(history_transfer,"\n\t\t\tNomor Rekening    : %s\n",  pemilik_rekening_1.norek);
+    		fprintf(history_transfer,"\n\t\t\tNominal Transfer  : %d\n", nominal);
+    		fprintf(history_transfer,"\n\t\t\tSisa Saldo        : %d\n", saldo);
+    		fprintf(history_transfer,"\n\t\t\tWaktu Transaksi   : %s\n", ctime (&ambil_waktu));
+    		fprintf(history_transfer,"\n\t\t-----------------------------");
+    		fclose(history_transfer);
+        }
+                else if (pin==111001){
+        printf("\t\t\t\t Bank Account Owner	    : %s\n", pemilik_rekening_2.nama);
+        printf("\t\t\t\t Bank Account Number 	: %s\n", pemilik_rekening_2.norek);
+        time_t ambil_waktu;
+        time(&ambil_waktu);
+        printf("\n\t\t\t\t Transaction time : %s ", ctime (&ambil_waktu));
+        FILE*history_transfer;
+            history_transfer=fopen("history_transfer.txt","a");													//Menyimpan bukti data transfer pada file jenis txt
+    		fprintf(history_transfer,"\n\t\t TRANSAKSI TRANSFER");
+    		fprintf(history_transfer,"\n\t\t-----------------------------");
+       		fprintf(history_transfer,"\n\t\t\tPemilik Rekening  : %s\n",  pemilik_rekening_2.nama);
+       		fprintf(history_transfer,"\n\t\t\tNomor Rekening    : %s\n",  pemilik_rekening_2.norek);
+    		fprintf(history_transfer,"\n\t\t\tNominal Transfer  : %d\n", nominal);
+    		fprintf(history_transfer,"\n\t\t\tSisa Saldo        : %d\n", saldo);
+    		fprintf(history_transfer,"\n\t\t\tWaktu Transaksi   : %s\n", ctime (&ambil_waktu));
+    		fprintf(history_transfer,"\n\t\t-----------------------------");
+    		fclose(history_transfer);
+        }
+
         goto ulang2;
 }
 
@@ -707,9 +847,45 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 		else if(pilihan==2){
       		printf("\n\t\t\t\tTransaksi di Batalkan!");
 			}
+
+        if (pin ==111000){
+        printf("\n\t\t\t\t Pemilik Rekening	: %s\n", pemilik_rekening_1.nama);
+        printf("\t\t\t\t Nomor Rekening 	: %s\n", pemilik_rekening_1.norek);
         time_t ambil_waktu;
         time(&ambil_waktu);
-        printf("\n\t\t\t\tWaktu Transaksi : %s ", ctime (&ambil_waktu));
+        printf("\n\t\t\t\t Waktu Transaksi  : %s ", ctime (&ambil_waktu));
+         FILE*history_setor;
+            history_setor=fopen("history_setor.txt","a");
+    		fprintf(history_setor,"\n\t\t TRANSAKSI SETOR TUNAI");
+    		fprintf(history_setor,"\n\t\t-----------------------------");
+       		fprintf(history_setor,"\n\n\t\tPemilik Rekening   : %s\n",  pemilik_rekening_1.nama);
+       		fprintf(history_setor,"\n\n\t\tNomor Rekening     : %s\n",  pemilik_rekening_1.norek);
+    		fprintf(history_setor,"\n\n\t\tNominal Penyetoran : %d\n", nominal);
+    		fprintf(history_setor,"\n\n\t\tSisa Saldo         : %d\n", saldo);
+    		fprintf(history_setor,"\n\t\t\tWaktu Transaksi    : %s\n", ctime (&ambil_waktu));
+    		fprintf(history_setor,"\n\t\t-----------------------------");
+    		fclose(history_setor);
+
+        }
+                else if (pin==111001){
+        printf("\t\t\t\t Pemilik Rekening	: %s\n", pemilik_rekening_2.nama);
+        printf("\t\t\t\t Nomor Rekening 	: %s\n", pemilik_rekening_2.norek);
+        time_t ambil_waktu;
+        time(&ambil_waktu);
+        printf("\n\t\t\t\t Waktu Transaksi  : %s ", ctime (&ambil_waktu));
+         FILE*history_setor;
+            history_setor=fopen("history_setor.txt","a");
+    		fprintf(history_setor,"\n\t\t TRANSAKSI SETOR TUNAI");
+    		fprintf(history_setor,"\n\t\t-----------------------------");
+       		fprintf(history_setor,"\n\n\t\tPemilik Rekening   : %s\n",  pemilik_rekening_2.nama);
+       		fprintf(history_setor,"\n\n\t\tNomor Rekening     : %s\n",  pemilik_rekening_2.norek);
+    		fprintf(history_setor,"\n\n\t\tNominal Penyetoran : %d\n", nominal);
+    		fprintf(history_setor,"\n\n\t\tSisa Saldo         : %d\n", saldo);
+    		fprintf(history_setor,"\n\t\t\tWaktu Transaksi    : %s\n", ctime (&ambil_waktu));
+    		fprintf(history_setor,"\n\t\t-----------------------------");
+    		fclose(history_setor);
+        }
+
         goto ulang1;
     }
 
@@ -732,9 +908,45 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 		else if(pilihan==2){
       		printf("\n\t\t\t\t Transaction failed!");
       		}
+
+         if (pin ==111000){
+        printf("\n\t\t\t\t Bank Account Owner	: %s\n", pemilik_rekening_1.nama);
+        printf("\t\t\t\t Bank Account Number	: %s\n", pemilik_rekening_1.norek);
         time_t ambil_waktu;
         time(&ambil_waktu);
-        printf("\n\t\t\t\tTransaction time : %s ", ctime (&ambil_waktu));
+        printf("\n\t\t\t\t Transaction time : %s ", ctime (&ambil_waktu));
+         FILE*history_setor;
+            history_setor=fopen("history_setor.txt","a");
+    		fprintf(history_setor,"\n\t\t TRANSAKSI SETOR TUNAI");
+    		fprintf(history_setor,"\n\t\t-----------------------------");
+       		fprintf(history_setor,"\n\n\t\tPemilik Rekening   : %s\n",  pemilik_rekening_1.nama);
+       		fprintf(history_setor,"\n\n\t\tNomor Rekening     : %s\n",  pemilik_rekening_1.norek);
+    		fprintf(history_setor,"\n\n\t\tNominal Penyetoran : %d\n", nominal);
+    		fprintf(history_setor,"\n\n\t\tSisa Saldo         : %d\n", saldo);
+    		fprintf(history_setor,"\n\t\t\tWaktu Transaksi    : %s\n", ctime (&ambil_waktu));
+    		fprintf(history_setor,"\n\t\t-----------------------------");
+    		fclose(history_setor);
+
+        }
+                else if (pin==111001){
+        printf("\t\t\t\t Bank Account Owner	    : %s\n", pemilik_rekening_2.nama);
+        printf("\t\t\t\t Bank Account Number 	: %s\n", pemilik_rekening_2.norek);
+        time_t ambil_waktu;
+        time(&ambil_waktu);
+        printf("\n\t\t\t\t Transaction time : %s ", ctime (&ambil_waktu));
+         FILE*history_setor;
+            history_setor=fopen("history_setor.txt","a");
+    		fprintf(history_setor,"\n\t\t TRANSAKSI SETOR TUNAI");
+    		fprintf(history_setor,"\n\t\t-----------------------------");
+       		fprintf(history_setor,"\n\n\t\tPemilik Rekening   : %s\n",  pemilik_rekening_2.nama);
+       		fprintf(history_setor,"\n\n\t\tNomor Rekening     : %s\n",  pemilik_rekening_2.norek);
+    		fprintf(history_setor,"\n\n\t\tNominal Penyetoran : %d\n", nominal);
+    		fprintf(history_setor,"\n\n\t\tSisa Saldo         : %d\n", saldo);
+    		fprintf(history_setor,"\n\t\t\tWaktu Transaksi    : %s\n", ctime (&ambil_waktu));
+    		fprintf(history_setor,"\n\t\t-----------------------------");
+    		fclose(history_setor);
+        }
+
         goto ulang2;
 }
 
