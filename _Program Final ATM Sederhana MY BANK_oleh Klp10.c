@@ -15,7 +15,7 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
     int bahasa, menu_awal, end, pin, pilihan, tarik_tunai1,
         transfer1, setor_tunai1, setoran, tarik_tunai2, transfer2,
         setor_tunai2, nominal, transfer, ulang1, ulang2, saldo = 500000;
-    time_t t ;
+    time_t  ambil_waktu ;
     char username[10];
 	char kode[10];
 
@@ -209,23 +209,11 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 
 	indonesia : {
 	system ("cls");
-        printf("\t\t\t\t ==================================================\n");
-        printf("\t\t\t\t ==================================================\n");
-        printf("\t\t\t\t                    SELAMAT DATANG DI              \n\n");
-        printf("\t\t\t\t                     # ATM MY BANK #               \n");
-        printf("\t\t\t\t ==================================================\n");
-        printf("\t\t\t\t ==================================================\n");
 	goto menu1;
 	}
 
 	inggris : {
 	system ("cls");
-        printf("\t\t\t\t ==================================================\n");
-        printf("\t\t\t\t ==================================================\n");
-        printf("\t\t\t\t                       WELCOME TO                \n\n");
-        printf("\t\t\t\t                     # MY BANK' ATM #               \n");
-        printf("\t\t\t\t ==================================================\n");
-        printf("\t\t\t\t ==================================================\n");
     goto menu2;
 	}
 
@@ -312,28 +300,104 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
 // Direvisi Oleh  : Made Hollanda Putri - 2105551014                     //
 //=======================================================================//
 
-    cek_saldo1 :{
-        printf ("\t\t\t\t========================================================\n");
+        cek_saldo1 :{
+
+                if (pin ==111000){
+        printf("\n\t\t\t\t Pemilik Rekening	: %s\n", pemilik_rekening_1.nama);								//Menampilkan string pada program
+        printf("\n\t\t\t\t Nomor Rekening 	: %s\n", pemilik_rekening_1.norek);								//Menampilkan string pada program
+        printf ("\n\t\t\t\t========================================================\n");
         printf("\n\t\t\t\t                     SALDO ANDA SEBESAR \n" );
         printf("\n\t\t\t\t                        Rp. %d\n\n", saldo);
-        printf ("\t\t\t\t========================================================\n");
-        time_t ambil_waktu;
+        printf ("\n\t\t\t\t========================================================\n");
+        time_t ambil_waktu;																					//Menginput waktu pada program
         time(&ambil_waktu);
         printf("\n\t\t\t\tWaktu Transaksi : %s ", ctime (&ambil_waktu));
+         FILE *history_ceksaldo;																				//Membuat sebuah file bukti ceksaldo
+            history_ceksaldo=fopen("history_ceksaldo.txt","a");													//Menyimpan bukti data ceksaldo pada file jenis txt
+    		fprintf(history_ceksaldo,"\n\t\t  TRANSAKSI CEK SALDO");
+    		fprintf(history_ceksaldo,"\n\t\t-----------------------------");
+       		fprintf(history_ceksaldo,"\n\t\t\tPemilik Rekening : %s\n",  pemilik_rekening_1.nama );
+       		fprintf(history_ceksaldo,"\n\t\t\tNomor Rekening   : %s\n",  pemilik_rekening_1.norek);
+    		fprintf(history_ceksaldo,"\n\t\t\tSisa Saldo       : %d\n", saldo);
+    		fprintf(history_ceksaldo,"\n\t\t\tWaktu Transaksi  : %s\n", ctime (&ambil_waktu));
+    		fprintf(history_ceksaldo,"\n\t\t-----------------------------");
+    		fclose(history_ceksaldo);
+        }
 
-        goto ulang1;
+                else if (pin==111001){
+        printf("\t\t\t\t Pemilik Rekening	: %s\n", pemilik_rekening_2.nama);								//Menampilkan string pada program
+        printf("\t\t\t\t Nomor Rekening 	: %s\n", pemilik_rekening_2.norek);								//Menampilkan string pada program
+        printf ("\n\t\t\t\t========================================================\n");
+        printf("\n\t\t\t\t                     SALDO ANDA SEBESAR \n" );
+        printf("\n\t\t\t\t                        Rp. %d\n\n", saldo);
+        printf ("\n\t\t\t\t========================================================\n");
+        time_t ambil_waktu;
+        time(&ambil_waktu);
+        printf("\n\t\t\t\t Waktu Transaksi : %s ", ctime (&ambil_waktu));
+         FILE *history_ceksaldo;																				//Membuat sebuah file bukti ceksaldo
+            history_ceksaldo=fopen("history_ceksaldo.txt","a");													//Menyimpan bukti data ceksaldo pada file jenis txt
+    		fprintf(history_ceksaldo,"\n\t\t  TRANSAKSI CEK SALDO");
+    		fprintf(history_ceksaldo,"\n\t\t-----------------------------");
+       		fprintf(history_ceksaldo,"\n\t\t\tPemilik Rekening : %s\n",  pemilik_rekening_2.nama);
+       		fprintf(history_ceksaldo,"\n\t\t\tNomor Rekening   : %s\n",  pemilik_rekening_2.norek);
+    		fprintf(history_ceksaldo,"\n\t\t\tSisa Saldo       : %d\n", saldo);
+    		fprintf(history_ceksaldo,"\n\t\t\tWaktu Transaksi  : %s\n", ctime (&ambil_waktu));
+    		fprintf(history_ceksaldo,"\n\t\t-----------------------------");
+    		fclose(history_ceksaldo);
+        }
+
+
+        goto ulang1; //Statement yang membawa program menuju menu ulang1
         }
 
     cek_saldo2 :{
-        printf ("\t\t\t\t========================================================\n");
+                if (pin ==111000){
+        printf("\n\t\t\t\t Bank Account Owner	: %s\n", pemilik_rekening_1.nama);								//Menampilkan string pada program
+        printf("\n\t\t\t\t Bank Account Number	: %s\n", pemilik_rekening_1.norek);								//Menampilkan string pada program
+        printf ("\n\t\t\t\t========================================================\n");
         printf("\n\t\t\t\t                     YOUR BALANCE IS \n" );
         printf("\n\t\t\t\t                       Rp. %d\n\n", saldo);
-        printf ("\t\t\t\t========================================================\n");
+        printf ("\n\t\t\t\t========================================================\n");
         time_t ambil_waktu;
         time(&ambil_waktu);
-        printf("\n\t\t\t\tTransaction time : %s ", ctime (&ambil_waktu));
-        goto ulang2;
+        printf("\n\t\t\t\t Waktu Transaksi : %s ", ctime (&ambil_waktu));
+        FILE *history_ceksaldo;																				//Membuat sebuah file bukti ceksaldo
+            history_ceksaldo=fopen("history_ceksaldo.txt","a");													//Menyimpan bukti data ceksaldo pada file jenis txt
+    		fprintf(history_ceksaldo,"\n\t\t  TRANSAKSI CEK SALDO");
+    		fprintf(history_ceksaldo,"\n\t\t-----------------------------");
+       		fprintf(history_ceksaldo,"\n\t\t\tPemilik Rekening : %s\n",  pemilik_rekening_1.nama );
+       		fprintf(history_ceksaldo,"\n\t\t\tNomor Rekening   : %s\n",  pemilik_rekening_1.norek);
+    		fprintf(history_ceksaldo,"\n\t\t\tSisa Saldo       : %d\n", saldo);
+    		fprintf(history_ceksaldo,"\n\t\t\tWaktu Transaksi  : %s\n", ctime (&ambil_waktu));
+    		fprintf(history_ceksaldo,"\n\t\t-----------------------------");
+    		fclose(history_ceksaldo);
         }
+
+                else if (pin==111001){
+        printf("\t\t\t\t Bank Account Owner 	: %s\n", pemilik_rekening_2.nama);								//Menampilkan string pada program
+        printf("\t\t\t\t Bank Account Number    : %s\n", pemilik_rekening_2.norek);								//Menampilkan string pada program
+        printf ("\n\t\t\t\t========================================================\n");
+        printf("\n\t\t\t\t                     YOUR BALANCE IS \n" );
+        printf("\n\t\t\t\t                       Rp. %d\n\n", saldo);
+        printf ("\n\t\t\t\t========================================================\n");
+        time_t ambil_waktu;
+        time(&ambil_waktu);
+        printf("\n\t\t\t\t Transaction time : %s ", ctime (&ambil_waktu));
+        FILE *history_ceksaldo;																				//Membuat sebuah file bukti ceksaldo
+            history_ceksaldo=fopen("history_ceksaldo.txt","a");													//Menyimpan bukti data ceksaldo pada file jenis txt
+    		fprintf(history_ceksaldo,"\n\t\t  TRANSAKSI CEK SALDO");
+    		fprintf(history_ceksaldo,"\n\t\t-----------------------------");
+       		fprintf(history_ceksaldo,"\n\t\t\tPemilik Rekening : %s\n",  pemilik_rekening_2.nama);
+       		fprintf(history_ceksaldo,"\n\t\t\tNomor Rekening   : %s\n",  pemilik_rekening_2.norek);
+    		fprintf(history_ceksaldo,"\n\t\t\tSisa Saldo       : %d\n", saldo);
+    		fprintf(history_ceksaldo,"\n\t\t\tWaktu Transaksi  : %s\n", ctime (&ambil_waktu));
+    		fprintf(history_ceksaldo,"\n\t\t-----------------------------");
+    		fclose(history_ceksaldo);
+        }
+
+        goto ulang2; //Statement yang membawa program menuju menu ulang1
+        }
+
 
 //=======================================================================//
 //                     Tarik Tunai 1 dan  2                              //
