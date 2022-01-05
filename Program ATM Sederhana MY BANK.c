@@ -839,7 +839,7 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
         printf("\t\t\t\t Bank Account Number	: %s\n", pemilik_rekening_1.norek);						  						//Menampilkan string pada program
 		time_t ambil_waktu;																		//Menginput waktu pada program
         time(&ambil_waktu);																	     	 	//Memproses waktu dari data perangkat user
-        printf("\n\t\t\t\tTransaction Time : %s ", ctime (&ambil_waktu)); 													//Menampilkan waktu dari data perangkat user
+        printf("\n\t\t\t\t Transaction Time : %s ", ctime (&ambil_waktu)); 													//Menampilkan waktu dari data perangkat user
         FILE*history_transfer;																			//Membuat sebuah file bukti transfer
             history_transfer=fopen("history_transfer.txt","a");															//Menyimpan bukti data transfer pada file jenis txt
     		fprintf(history_transfer,"\n\t\t      TRANSFER HISTORY");
@@ -859,7 +859,7 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
         printf("\t\t\t\t Bank Account Number 	: %s\n", pemilik_rekening_2.norek);												//Menampilkan string pada program
 		time_t ambil_waktu;																		//Menginput waktu pada program
         time(&ambil_waktu);																	     	 	//Memproses waktu dari data perangkat user
-        printf("\n\t\t\t\tTransaction Time : %s ", ctime (&ambil_waktu)); 													//Menampilkan waktu dari data perangkat user
+        printf("\n\t\t\t\t Transaction Time : %s ", ctime (&ambil_waktu)); 													//Menampilkan waktu dari data perangkat user
         FILE*history_transfer;																			//Membuat sebuah file bukti transfer
             history_transfer=fopen("history_transfer.txt","a");													    		//Menyimpan bukti data transfer pada file jenis txt
     		fprintf(history_transfer,"\n\t\t      TRANSFER HISTORY");
@@ -929,7 +929,7 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
         printf("\t\t\t\t Nomor Rekening 	: %s\n", pemilik_rekening_1.norek);														//Menampilkan string pada program
 		time_t ambil_waktu;																			 	//Menginput waktu pada program
         time(&ambil_waktu);																	     	 			//Memproses waktu dari data perangkat user
-        printf("\n\t\t\t\Waktu Transaksi : %s ", ctime (&ambil_waktu)); 															//Menampilkan waktu dari data perangkat user
+        printf("\n\t\t\t\ Waktu Transaksi : %s ", ctime (&ambil_waktu)); 															//Menampilkan waktu dari data perangkat user
          FILE*history_setor;																					//Membuat sebuah file bukti setor tunai
             history_setor=fopen("history_setor.txt","a");																	//Menyimpan bukti data setor tunai pada file jenis txt
     		fprintf(history_setor,"\n\t\t TRANSAKSI SETOR TUNAI");
@@ -948,7 +948,7 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
         printf("\t\t\t\t Nomor Rekening 	: %s\n", pemilik_rekening_2.norek);														//Menampilkan string pada program
 		time_t ambil_waktu;																			 	//Menginput waktu pada program
         time(&ambil_waktu);																	     	 			//Memproses waktu dari data perangkat user
-        printf("\n\t\t\t\Waktu Transaksi : %s ", ctime (&ambil_waktu)); 															//Menampilkan waktu dari data perangkat user
+        printf("\n\t\t\t\ Waktu Transaksi : %s ", ctime (&ambil_waktu)); 															//Menampilkan waktu dari data perangkat user
          FILE*history_setor;																					//Membuat sebuah file bukti setor tunai
             history_setor=fopen("history_setor.txt","a");																	//Menyimpan bukti data setor tunai pada file jenis txt
     		fprintf(history_setor,"\n\t\t TRANSAKSI SETOR TUNAI");
@@ -990,7 +990,7 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
         printf("\t\t\t\t Bank Account Number	: %s\n", pemilik_rekening_1.norek);														//Menampilkan string pada program
 		time_t ambil_waktu;																			 	//Menginput waktu pada program
         time(&ambil_waktu);																	     	 			//Memproses waktu dari data perangkat user
-        printf("\n\t\t\t\Transaction Time : %s ", ctime (&ambil_waktu)); 															//Menampilkan waktu dari data perangkat user
+        printf("\n\t\t\t\ Transaction Time : %s ", ctime (&ambil_waktu)); 															//Menampilkan waktu dari data perangkat user
          FILE*history_setor; 																					//Membuat sebuah file bukti setor tunai
             history_setor=fopen("history_setor.txt","a");																	//Menyimpan bukti data setor tunai pada file jenis txt
     		fprintf(history_setor,"\n\t\t     CASH DEPOSIT HISTORY");
