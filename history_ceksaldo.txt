@@ -1,49 +1,53 @@
 
-		                             TRANSAKSI CEK SALDO
-		                       -----------------------------
+		  TRANSAKSI CEK SALDO
+		-----------------------------
 
-		   			Pemilik Rekening : Jesica Syalomitha
+		Pemilik Rekening : Jesica Syalomitha
 
+		Nomor Rekening   : 2105551043
 
-		   			Nomor Rekening   : 2105551043
+		Sisa Saldo       : 500000
 
-
-		            		Sisa Saldo       : 500000
-
-										
-				Waktu Transaksi  : Mon Jan 03 17:29:45 2022
+		Waktu Transaksi  : Wed Jan 05 10:29:16 2022
 
 
-		                       -----------------------------
-		                             TRANSAKSI CEK SALDO
-		                       -----------------------------
+		-----------------------------
+		  TRANSAKSI CEK SALDO
+		-----------------------------
 
-		   			Pemilik Rekening : Jesica Syalomitha
+		Pemilik Rekening : Jesica Syalomitha
 
+		Nomor Rekening   : 2105551043
 
-		   			Nomor Rekening   : 2105551043
+		Sisa Saldo       : 100000
 
-
-		            		Sisa Saldo       : 500000
-
-
-				Waktu Transaksi  : Mon Jan 03 17:31:52 2022
+		Waktu Transaksi  : Wed Jan 05 10:30:02 2022
 
 
-		                       -----------------------------
-		                             TRANSAKSI CEK SALDO
-		                       -----------------------------
+		-----------------------------
+		  INQUIRY BALANCE HISTORY
+		-----------------------------
 
-		   			Pemilik Rekening : Jesica Syalomitha
+		Bank Account Owner	: Jesica Syalomitha
 
+		Bank Account Number     : 2105551043
 
-		   			Nomor Rekening   : 2105551043
+		Remaining Balance 	: 500000
 
-
-		            		Sisa Saldo       : 300000
-
-
-				Waktu Transaksi  : Mon Jan 03 17:32:45 2022
+		Transaction Time  	: Wed Jan 05 10:30:43 2022
 
 
-		                       -----------------------------
+		-----------------------------
+		  INQUIRY BALANCE HISTORY
+		-----------------------------
+
+		Bank Account Owner	: Jesica Syalomitha
+
+		Bank Account Number     : 2105551043
+
+		Remaining Balance 	: 200000
+
+		Transaction Time  	: Wed Jan 05 10:31:15 2022
+
+
+		-----------------------------
