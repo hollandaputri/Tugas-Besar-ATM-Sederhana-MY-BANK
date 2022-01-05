@@ -1,109 +1,73 @@
 
-		                           TRANSAKSI TRANSFER
-		                       -----------------------------
+		 TRANSAKSI TRANSFER
+		-----------------------------
+		Pemilik Rekening  	  : Jesica Syalomitha
 
-		   			Pemilik Rekening  : Jesica Syalomitha
+		Nomor Rekening    	  : 2105551043
 
+		Pemilik Rekening Tujuan   : Hollanda Putri
 
-		   			Nomor Rekening    : 2105551043
+		Nomor Rekening Tujuan     : 2105551014
 
+		Nominal Transfer  	  : 1
 
-		            		Nominal Penarikan : 6551888
+		Sisa Saldo        	  : 250000
 
-
-		            		Sisa Saldo        : 300000
-										
-				
-				Waktu Transaksi   : Mon Jan 03 17:29:48 2022
- 
-		                       -----------------------------
-		                           TRANSAKSI TRANSFER
-		                       -----------------------------
-
-		   			Pemilik Rekening  : Jesica Syalomitha
+		Waktu Transaksi   	  : Wed Jan 05 10:29:33 2022
 
 
-		   			Nomor Rekening    : 2105551043
+		-----------------------------
+		 TRANSAKSI TRANSFER
+		-----------------------------
+		Pemilik Rekening  	  : Jesica Syalomitha
+
+		Nomor Rekening    	  : 2105551043
+
+		Pemilik Rekening Tujuan   : Hollanda Putri
+
+		Nomor Rekening Tujuan     : 2105551014
+
+		Nominal Transfer  	  : 1
+
+		Sisa Saldo        	  : 250000
+
+		Waktu Transaksi   	  : Wed Jan 05 10:29:43 2022
 
 
-		            		Nominal Penarikan : 6551888
+		-----------------------------
+		 TRANSAKSI TRANSFER
+		-----------------------------
+		Pemilik Rekening  	  : Jesica Syalomitha
+
+		Nomor Rekening    	  : 2105551043
+
+		Pemilik Rekening Tujuan   : Hollanda Putri
+
+		Nomor Rekening Tujuan     : 2105551014
+
+		Nominal Transfer  	  : 150000
+
+		Sisa Saldo        	  : 100000
+
+		Waktu Transaksi   	  : Wed Jan 05 10:29:52 2022
 
 
-		            		Sisa Saldo        : 100000
-										
+		-----------------------------
+		      TRANSFER HISTORY
+		-----------------------------
+		Bank Account Owner   			  : Jesica Syalomitha
 
-				Waktu Transaksi   : Mon Jan 03 17:29:48 2022
- 
-		                       -----------------------------
-		                           TRANSAKSI TRANSFER
-		                       -----------------------------
+		Bank Account Number  			  : 2105551043
 
-		   			Pemilik Rekening  : Jesica Syalomitha
+		Bank Account Destination Owner  	  : Hollanda Putri
 
+		Bank Account Destination Number 	  : 2105551014
 
-		   			Nomor Rekening    : 2105551043
+		Transfer Nominal     			  : 150000
 
+		Remaining Balance    			  : 50000
 
-		            		Nominal Penarikan : 6551888
-
-
-		            		Sisa Saldo        : 300000
-
-										
-				Waktu Transaksi   : Mon Jan 03 17:31:56 2022
- 
-		                       -----------------------------
-		                           TRANSAKSI TRANSFER
-		                       -----------------------------
-
-		   		Pemilik Rekening  : Jesica Syalomitha
+		Transaction Time     			  : Wed Jan 05 10:34:10 2022
 
 
-		   		Nomor Rekening    : 2105551043
-
-
-		            	Nominal Penarikan : 6551888
-
-
-		            	Sisa Saldo        : 300000
-										
-
-				Waktu Transaksi   : Mon Jan 03 17:31:56 2022
- 
-		                       -----------------------------
-		                           TRANSAKSI TRANSFER
-		                       -----------------------------
-
-		   		Pemilik Rekening  : Jesica Syalomitha
-
-
-		   		Nomor Rekening    : 2105551043
-
-
-		            	Nominal Penarikan : 6551888
-
-
-		            	Sisa Saldo        : 300000
-										
-
-				Waktu Transaksi   : Mon Jan 03 17:31:56 2022
- 
-		                       -----------------------------
-		                           TRANSAKSI TRANSFER
-		                       -----------------------------
-
-		   		Pemilik Rekening  : Jesica Syalomitha
-
-
-		   		Nomor Rekening    : 2105551043
-
-
-		            	Nominal Penarikan : 6551888
-
-
-		            	Sisa Saldo        : 200000
-
-				Waktu Transaksi   : Mon Jan 03 17:33:14 2022
-
-
-		                       -----------------------------
+		-----------------------------
