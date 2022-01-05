@@ -1,20 +1,55 @@
 
-		                           TRANSAKSI SETOR TUNAI
-		                       -----------------------------
+		 TRANSAKSI SETOR TUNAI
+		-----------------------------
 
-		   			Pemilik Rekening  : Jesica Syalomitha 
-
-
-		   			Nomor Rekening    : 2105551043
+		Pemilik Rekening   : Jesica Syalomitha
 
 
-		            		Nominal Penyetoran : 150000
+		Nomor Rekening     : 2105551043
 
 
-		            		Sisa Saldo        : 300000
+		Nominal Penyetoran : 100000
 
 
-				Waktu Transaksi   : Mon Jan 03 17:33:31 2022
+		Sisa Saldo         : 100000
+
+		Waktu Transaksi    : Wed Jan 05 10:30:00 2022
 
 
-		                       -----------------------------
+		-----------------------------
+		 TRANSAKSI SETOR TUNAI
+		-----------------------------
+
+		Pemilik Rekening   : Jesica Syalomitha
+
+
+		Nomor Rekening     : 2105551043
+
+
+		Nominal Penyetoran : 100000
+
+
+		Sisa Saldo         : 200000
+
+		Waktu Transaksi    : Wed Jan 05 10:30:10 2022
+
+
+		-----------------------------
+		    CASH DEPOSIT HISTORY
+		-----------------------------
+
+		Bank Account Owner      : Jesica Syalomitha
+
+
+		Bank Account Number     : 2105551043
+
+
+		Cash Withdrawal Nominal : 50000
+
+
+		Remaining Balance       : 100000
+
+		Transaction Time        : Wed Jan 05 10:34:20 2022
+
+
+		-----------------------------
