@@ -1,3 +1,110 @@
+		-----------------------------
+		  TRANSAKSI CEK SALDO
+		-----------------------------
+			Pemilik Rekening : Jesica Syalomitha
+
+			Nomor Rekening   : 2105551043
+
+			Sisa Saldo       : 500000
+
+			Waktu Transaksi  : Tue Jan 04 18:27:19 2022
+
+
+		-----------------------------
+		  TRANSAKSI CEK SALDO
+		-----------------------------
+			Pemilik Rekening : Hollanda Putri
+
+			Nomor Rekening   : 2105551014
+
+			Sisa Saldo       : 500000
+
+			Waktu Transaksi  : Tue Jan 04 18:30:44 2022
+
+
+		-----------------------------
+		  TRANSAKSI CEK SALDO
+		-----------------------------
+			Pemilik Rekening : Hollanda Putri
+
+			Nomor Rekening   : 2105551014
+
+			Sisa Saldo       : 500000
+
+			Waktu Transaksi  : Tue Jan 04 18:41:33 2022
+
+
+		-----------------------------
+		  TRANSAKSI CEK SALDO
+		-----------------------------
+			Pemilik Rekening : Hollanda Putri
+
+			Nomor Rekening   : 2105551014
+
+			Sisa Saldo       : 500000
+
+			Waktu Transaksi  : Tue Jan 04 18:47:52 2022
+
+
+		-----------------------------
+		  TRANSAKSI CEK SALDO
+		-----------------------------
+			Pemilik Rekening : Jesica Syalomitha
+
+			Nomor Rekening   : 2105551043
+
+			Sisa Saldo       : 500000
+
+			Waktu Transaksi  : Tue Jan 04 18:57:06 2022
+			
+			-----------------------------
+		  TRANSAKSI CEK SALDO
+		-----------------------------
+			Pemilik Rekening : Hollanda Putri
+
+			Nomor Rekening   : 2105551014
+
+			Sisa Saldo       : 500000
+
+			Waktu Transaksi  : Wed Jan 05 08:20:12 2022
+
+
+		-----------------------------
+		  TRANSAKSI CEK SALDO
+		-----------------------------
+			Pemilik Rekening : Jesica Syalomitha
+
+			Nomor Rekening   : 2105551043
+
+			Sisa Saldo       : 500000
+
+			Waktu Transaksi  : Wed Jan 05 08:27:18 2022
+
+
+		-----------------------------
+		  TRANSAKSI CEK SALDO
+		-----------------------------
+			Pemilik Rekening : Hollanda Putri
+
+			Nomor Rekening   : 2105551014
+
+			Sisa Saldo       : 500000
+
+			Waktu Transaksi  : Wed Jan 05 09:00:43 2022
+
+
+		-----------------------------
+		  TRANSAKSI CEK SALDO
+		-----------------------------
+			Pemilik Rekening : Hollanda Putri
+
+			Nomor Rekening   : 2105551014
+
+			Sisa Saldo       : 500000
+
+			Waktu Transaksi  : Wed Jan 05 09:04:04 2022
+
+
 
 		  TRANSAKSI CEK SALDO
 		-----------------------------
@@ -51,3 +158,13 @@
 
 
 		-----------------------------
+		  TRANSAKSI CEK SALDO
+		-----------------------------
+			Pemilik Rekening : Hollanda Putri
+
+			Nomor Rekening   : 2105551014
+
+			Sisa Saldo       : 500000
+
+			Waktu Transaksi  : Wed Jan 05 12:22:09 2022
+
