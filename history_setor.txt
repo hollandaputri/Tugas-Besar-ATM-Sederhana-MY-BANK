@@ -1,3 +1,85 @@
+ 		-----------------------------
+		TRANSAKSI TRANSFER
+		-----------------------------
+			Pemilik Rekening  : Hollanda Putri
+
+			Nomor Rekening    : 2105551014
+
+			Nominal Transfer  : 100000
+
+			Sisa Saldo        : 300000
+
+			Waktu Transaksi   : Tue Jan 04 18:41:55 2022
+
+
+		-----------------------------
+		 TRANSAKSI TRANSFER
+		-----------------------------
+			Pemilik Rekening  : Hollanda Putri
+
+			Nomor Rekening    : 2105551014
+
+			Nominal Transfer  : 200000
+
+			Sisa Saldo        : 200000
+
+			Waktu Transaksi   : Tue Jan 04 18:48:08 2022
+
+
+		-----------------------------
+		 TRANSAKSI TRANSFER
+		-----------------------------
+			Pemilik Rekening  : Jesica Syalomitha
+
+			Nomor Rekening    : 2105551043
+
+			Nominal Transfer  : 100000
+
+			Sisa Saldo        : 300000
+
+			Waktu Transaksi   : Tue Jan 04 18:57:32 2022
+
+
+		-----------------------------
+		 TRANSAKSI TRANSFER
+		-----------------------------
+			Pemilik Rekening  : Hollanda Putri
+
+			Nomor Rekening    : 2105551014
+
+			Nominal Transfer  : 100000
+
+			Sisa Saldo        : 300000
+
+			Waktu Transaksi   : Wed Jan 05 08:20:55 2022
+
+
+		-----------------------------
+		 TRANSAKSI TRANSFER
+		-----------------------------
+			Pemilik Rekening  : Hollanda Putri
+
+			Nomor Rekening    : 2105551014
+
+			Nominal Transfer  : 100000
+
+			Sisa Saldo        : 280000
+
+			Waktu Transaksi   : Wed Jan 05 09:02:07 2022
+
+
+		-----------------------------
+		 TRANSAKSI TRANSFER
+		-----------------------------
+			Pemilik Rekening  : Hollanda Putri
+
+			Nomor Rekening    : 2105551014
+
+			Nominal Transfer  : 100000
+
+			Sisa Saldo        : 250000
+
+			Waktu Transaksi   : Wed Jan 05 09:05:14 2022
 
 		 TRANSAKSI SETOR TUNAI
 		-----------------------------
@@ -53,3 +135,14 @@
 
 
 		-----------------------------
+		 TRANSAKSI TRANSFER
+		-----------------------------
+			Pemilik Rekening  : Hollanda Putri
+
+			Nomor Rekening    : 2105551014
+
+			Nominal Transfer  : 200000
+
+			Sisa Saldo        : 150000
+
+			Waktu Transaksi   : Wed Jan 05 12:23:07 2022
