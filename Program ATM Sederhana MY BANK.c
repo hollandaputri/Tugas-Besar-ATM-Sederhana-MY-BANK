@@ -1093,5 +1093,5 @@ JUDUL PROGRAM	: PROGRAM ATM SEDERHANA "MY BANK"
         printf("\t\t\t\t*               2. Jesica Syalomitha               *\n");
         printf("\t\t\t\t ==================================================\n\n\n");
     }
-	return (0); 																	 //Statement yang menyatakan program berakhir dengan normal
+	return (0); 																	 					//Statement yang menyatakan program berakhir dengan normal
 }
