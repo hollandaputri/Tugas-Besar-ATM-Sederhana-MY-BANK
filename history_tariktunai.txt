@@ -1,3 +1,99 @@
+		-----------------------------
+		 TRANSAKSI TARIK TUNAI
+		-----------------------------
+			Pemilik Rekening  : Hollanda Putri
+
+			Nomor Rekening    : 2105551014
+
+			Nominal Penarikan : 268501009
+
+			Sisa Saldo        : 400000
+
+			Waktu Transaksi   : Tue Jan 04 18:41:40 2022
+
+
+		-----------------------------
+		  TRANSAKSI TARIK TUNAI
+		-----------------------------
+			Pemilik Rekening  : Hollanda Putri
+
+			Nomor Rekening    : 2105551014
+
+			Nominal Penarikan : 268501009
+
+			Sisa Saldo        : 400000
+
+			Waktu Transaksi   : Tue Jan 04 18:47:56 2022
+			
+		-----------------------------
+		  TRANSAKSI TARIK TUNAI
+		-----------------------------
+			Pemilik Rekening  : Hollanda Putri
+
+			Nomor Rekening    : 2105551014
+
+			Nominal Penarikan : 150000
+
+			Sisa Saldo        : 350000
+
+			Waktu Transaksi   : Wed Jan 05 08:26:36 2022
+
+
+		-----------------------------
+		  TRANSAKSI TARIK TUNAI
+		-----------------------------
+			Pemilik Rekening  : Hollanda Putri
+
+			Nomor Rekening    : 2105551014
+
+			Nominal Penarikan : 250000
+
+			Sisa Saldo        : 100000
+
+			Waktu Transaksi   : Wed Jan 05 08:26:52 2022
+
+
+		-----------------------------
+		  TRANSAKSI TARIK TUNAI
+		-----------------------------
+			Pemilik Rekening  : Jesica Syalomitha
+
+			Nomor Rekening    : 2105551043
+
+			Nominal Penarikan : 200000
+
+			Sisa Saldo        : 300000
+
+			Waktu Transaksi   : Wed Jan 05 08:27:35 2022
+
+
+		-----------------------------
+		  TRANSAKSI TARIK TUNAI
+		-----------------------------
+			Pemilik Rekening  : Hollanda Putri
+
+			Nomor Rekening    : 2105551014
+
+			Nominal Penarikan : 120000
+
+			Sisa Saldo        : 380000
+
+			Waktu Transaksi   : Wed Jan 05 09:01:15 2022
+
+
+		-----------------------------
+		  TRANSAKSI TARIK TUNAI
+		-----------------------------
+			Pemilik Rekening  : Hollanda Putri
+
+			Nomor Rekening    : 2105551014
+
+			Nominal Penarikan : 150000
+
+			Sisa Saldo        : 350000
+
+			Waktu Transaksi   : Wed Jan 05 09:04:39 2022
+
 
 		  TRANSAKSI TARIK TUNAI
 		-----------------------------
@@ -42,5 +138,17 @@
 
 		Transaction Time   	: Wed Jan 05 10:31:12 2022
 
+		-----------------------------
+		  TRANSAKSI TARIK TUNAI
+		-----------------------------
+			Pemilik Rekening  : Hollanda Putri
+
+			Nomor Rekening    : 2105551014
+
+			Nominal Penarikan : 150000
+
+			Sisa Saldo        : 350000
+
+			Waktu Transaksi   : Wed Jan 05 12:22:40 2022
 
 		-----------------------------
